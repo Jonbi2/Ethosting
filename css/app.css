@@ -1,0 +1,141 @@
+html, body { margin: 0px; font-family: 'Whitney'; height: 100%; }
+body { background-color: #36393e; color: #c1c2c4; overflow: hidden; }
+
+::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 0px;
+	background-color: trasparent;
+}
+
+::-webkit-scrollbar
+{
+	width: 12px;
+	background-color: trasparent;
+}
+
+::-webkit-scrollbar-thumb
+{
+	border-radius: 0px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: #303136;
+}
+
+#header {
+    background-color: #303136; 
+    height: 40px;
+    text-align: center;
+}
+.draggable {
+    -webkit-app-region: drag;
+}
+#content {
+    padding: 10px;
+    overflow-y: scroll;
+    height: calc(100% - 64px);
+}
+.header-text {
+    display: block;
+    height: 40px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    line-height: 40px;
+}
+.upload {
+    position: absolute;
+    right: 5px;
+    display: inline-block;
+    padding: 6px;
+    margin: 5px;
+    font-size: 14px;
+    border-radius: 10px;
+    font-weight: bold;
+    color: #006500;
+    background-color: #28c941;
+}
+
+.footer {
+    margin-top: 10px;
+    border-top: 1px solid #515254;
+    padding-top: 10px;
+    color: #818284;
+    width: 100%;
+    text-align: center;
+}
+
+/* file */
+
+.file {
+    padding: 10px;
+    background-color: #202126;
+    margin-bottom: 4px;
+    height: 64px;
+}
+
+.file > * {
+    float: left;
+}
+
+.file .index {
+    width: 64px;
+    display: inline-block;
+    text-align: center;
+    height: 64px;
+    line-height: 64px;
+    text-align: center;
+}
+
+.file .preview {
+    margin-left: 10px;
+    display: inline-block;
+    width: 64px;
+    height: 64px;
+    background-color: rgba(0,0,0,0.3);
+    text-align: center;
+    line-height: 64px;
+}
+
+.file .preview img {
+    padding: 8px;
+    max-width: 48px;
+    height: 48px;
+}
+
+.file .meta {
+    margin-left: 10px;
+    font-size: 12px;
+    width: calc(100% - 148px);
+    display: inline-block;
+    word-wrap: break-word;
+}
+
+.file .meta .name {
+    font-size: 8px;
+}
+
+.file .progress-title {
+    margin-left: 10px;
+    width: calc(100% - 84px);
+    text-align: center;
+    height: 32px;
+}
+
+.file .progress {
+    margin-left: 10px;
+    width: calc(100% - 84px);
+    background-color: rgba(0,0,0,0.3);
+    height: 32px;
+}
+
+.file .progress-indicator {
+    background-color: green;
+    width: 0%;
+    height: 32px;
+    transition: width 1s ease;
+}
+
+p {
+    margin: 0px;
+}

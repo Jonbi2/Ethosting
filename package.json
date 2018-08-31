@@ -1,0 +1,29 @@
+{
+  "name": "FilETHosting",
+  "version": "0.1.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "electron-rebuild": "electron-rebuild",
+    "package": "electron-packager . --overwrite",
+    "package-win": "electron-packager . --platform=win32 --overwrite",
+    "package-mac": "electron-packager . --platform=darwin --overwrite",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Xeno",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^2.0.2",
+    "electron-connect": "^0.6.3",
+    "electron-packager": "^12.1.0",
+    "electron-rebuild": "^1.7.3",
+    "electron-reload": "^1.2.2"
+  },
+  "dependencies": {
+    "file-type": "^8.0.0",
+    "jquery": "^3.3.1",
+    "string-to-arraybuffer": "^1.0.0",
+    "web3": "^1.0.0-beta.34"
+  }
+}
